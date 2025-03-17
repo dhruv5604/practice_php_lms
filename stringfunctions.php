@@ -46,7 +46,12 @@
         echo __DIR__ . "<br>";
         echo __FILE__ . "<br>";
         echo __LINE__ . "<br>";
-        
+
+        function demo1(){
+            echo __FUNCTION__ . "<br>";
+        }
+        demo1();
+
     ?>
 </body>
 </html>

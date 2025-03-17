@@ -27,8 +27,8 @@
     }
     var_dump($colors);
     echo"<br>";
+    
     //for changing array element we need to use reference of original array.
-
     foreach($colors as &$x){
         if ($x == "yellow") $x = "green";
     }

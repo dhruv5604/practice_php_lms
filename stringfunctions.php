@@ -52,6 +52,12 @@
         }
         demo1();
 
+        function foo(){
+            echo "dhruv";
+        }
+
+        $func = 'foo';
+        $func();
     ?>
 </body>
 </html>

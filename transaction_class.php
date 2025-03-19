@@ -1,6 +1,6 @@
 <?php
  
-class Transaction
+class transaction_class
 {
     // public function __construct()
     // {

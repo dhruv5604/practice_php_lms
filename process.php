@@ -1,13 +1,13 @@
 <?php
 
-require("transaction_class.php");
-require("user.php");
+require_once("transaction_class.php");
+require_once("user.php");
   
 $transactions=[
-    new Transaction("abc","200","withdrawal"),
-    new Transaction("def","100","deposit"),
-    new Transaction("abc","200","deposit"),
-    new Transaction("def","50","withdrawal")
+    new transaction_class("abc","300","withdrawal"),
+    new transaction_class("def","100","deposit"),
+    new transaction_class("abc","200","deposit"),
+    new transaction_class("def","50","withdrawal")
 ];
 
 $users = [];
@@ -20,6 +20,10 @@ foreach ($transactions as $transaction) {
 } 
 
 foreach ($users as $user) {
+    echo "Details of " . $user->name . "\n";
     echo "<pre>";
-    print_r($user->get_transactions());
+    print_r($user->largest_transaction());
+
+    print_r($user->total_deposte_withdrawals());
+    print_r($user->total_balance());
 }

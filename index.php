@@ -25,6 +25,15 @@
         my2();
         my2();
         my2();
+
+        echo "<br>";
+
+        $a = "total";
+        $b = "amount";
+
+        ${$a . ucfirst($b)} = "new";
+
+        echo $totalAmount;
     ?>
 </body>
 </html>

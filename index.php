@@ -31,9 +31,34 @@
         $a = "total";
         $b = "amount";
 
-        ${$a . ucfirst($b)} = "new";
+        ${$a . ucfirst($b)} = "new <br>";
 
         echo $totalAmount;
+
+        class user{
+            public $name;
+        }
+
+        $user = null;
+        // echo $user?->name;
+
+        function minOperations($nums) {
+            $count = 0;
+            $temp = $nums;
+            print_r($temp);
+            for($i = 0;$i<count($nums)-3;$i++){
+                
+                
+                
+                if($nums[$i-1] == 0 || $nums[0] == 0 || $nums[count($nums)-1] == 0){
+                    return -1;
+                }
+           } 
+    
+           return $count;
+        }
+
+        minOperations([0,1,1,1,0,0]);   
     ?>
 </body>
 </html>

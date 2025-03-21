@@ -1,7 +1,7 @@
 <?php
 
 class CheckingAccount extends BankAccount{
-    public function withdraw($amount){
+    public function withdraw(float $amount){
         if($amount > 1000){
             echo "Withdrawal amount is greater than limit!!!<br>";
         } else {

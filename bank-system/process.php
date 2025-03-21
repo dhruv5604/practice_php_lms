@@ -4,8 +4,8 @@ spl_autoload_register(function($className){
     include $className . '.php';
 });
 
-$accA = new SavingAccount('1','500');
-$accB = new CheckingAccount("2" , '1000');
+$accA = new SavingAccount('1',500);
+$accB = new CheckingAccount("2" , 1000);
 
 $accA->deposit(500);
 $accA->deposit(200);

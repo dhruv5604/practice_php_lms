@@ -11,7 +11,7 @@ abstract class BankAccount{
     public static $totalTransactions = 0;
     public static $totalAccount = 0;
 
-    public function __construct($accountNumber , $balance){
+    public function __construct($accountNumber , float $balance){
         $this->accountNumber = $accountNumber;
         $this->balance = $balance;
         self::$totalAccount++;
@@ -21,7 +21,7 @@ abstract class BankAccount{
         return $this->accountNumber;
     }
 
-    public function deposit(int $amount){
+    public function deposit(float $amount){
         $this->balance += $amount;
         self::$totalTransactions++;
 
@@ -40,5 +40,5 @@ abstract class BankAccount{
         return self::$totalTransactions;
     }
 
-    abstract public function withdraw($amount);
+    abstract public function withdraw(float $amount);
 }

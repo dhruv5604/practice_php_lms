@@ -1,7 +1,7 @@
 <?php
 
 class SavingAccount extends BankAccount{
-    public function withdraw($amount){
+    public function withdraw(float $amount){
         $this->balance -= $amount;
         parent::$totalTransactions++;
 

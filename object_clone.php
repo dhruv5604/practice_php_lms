@@ -13,5 +13,5 @@ $bob = clone $alice;
 
 $bob->name = "Bob";
 
-echo $alice->name . "<br>";
+echo $alice->name . "\n";
 echo $bob->name;
